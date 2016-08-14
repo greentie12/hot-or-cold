@@ -17,7 +17,7 @@ $(document).ready(function() {
     	$('#feedback').html("Make your Guess!").css({ "background-color": "#cc324b", "color": "white", "font-weight": "bold" });
     	$('#count').html(count);
     	$('#guessList').html(" ");
-    	//$('input#userGuess.text').html(" ");
+    	//$('#userGuess.text').html(" ");
 
     });
 
@@ -29,10 +29,7 @@ $(document).ready(function() {
         event.preventDefault();
         count++;
         var guess = $('#userGuess').val();
-        //var compNum = Math.floor(Math.random() * 2 + 1);
-        //var count = true;
 
-        //while (count) {
         if (guess == compNum) {
             //$('#guessList').append("Congratulations. You have guessed the number!");
             $('#feedback').html("Congratulations. You have guessed the number!").css({ "background-color": "#cc324b", "color": "white", "font-weight": "bold" });
@@ -53,6 +50,5 @@ $(document).ready(function() {
             $('#feedback').html("Cold").css({ "background-color": "#82CFFD", "color": "black", "font-weight": "bold" });
             $('#count').html(count);
         }
-        //count = false;
     });
 });
