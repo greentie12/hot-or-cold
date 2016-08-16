@@ -319,3 +319,9 @@ ul.guessBox li {
 	margin: 0.2em;
 	color: #fff;
 }
+
+h6.tie {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: #8FA4B5;
+	font-weight: bold;
+} 
